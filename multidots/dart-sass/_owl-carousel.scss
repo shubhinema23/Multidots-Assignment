@@ -1,0 +1,34 @@
+@mixin owl-carousel
+{
+   .carousel-wrapper {
+      width: 100%;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    
+    .owl-carousel .item {
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .owl-dot{
+    	height: 3px;
+    	width: 40px;
+    	border-radius: 25px;
+    	cursor: pointer;
+    	margin: 0 5px;
+    	border: 2px solid #000;
+    	background-color: #676767 !important;
+      display: inline-block !important;
+    }
+
+    .owl-dots .active{
+    	background-color: #ff841b !important;
+    }
+}
+
+
+@include owl-carousel;

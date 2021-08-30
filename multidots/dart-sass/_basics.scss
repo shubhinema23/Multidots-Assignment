@@ -1,0 +1,86 @@
+/* define variables for the primary colors */
+
+$color1: #001a53; //blue
+$color2: #ff841b; //orange
+$color3: #ffffff; //white
+$color4: #676767; //grey
+
+
+/* define variables for the font */
+
+$font-family: 'Poppins', sans-serif;
+
+
+/* define variable for the border */
+
+$basicBorder:1px;
+
+
+/* define basic css */
+
+body {
+  font-family: $font-family;
+  overflow-x: hidden;
+} 
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family;
+}
+a,a:hover,a:focus {
+  text-decoration: none !important;
+  outline:none !important;
+}
+
+
+
+/* define mixin for the background image */
+
+@mixin background-img-prop($bg-position) {
+	background-size: $bg-position;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* define mixin for section heading */
+@mixin heading($spanCol, $h3Col, $pCol, $spanSize, $h3Size, $pSize){
+  .heading span{
+      color: $spanCol;
+      margin-bottom: 10px;
+      font:{
+        size: $spanSize;
+        weight: 600;
+      }
+}
+.heading h3{
+      color: $h3Col;
+      margin-bottom: 15px;
+      font: {
+        size: $h3Size;
+        weight: 600;
+      }
+  }
+.heading p{
+      color: $pCol;
+      margin-bottom: 20px;
+      text-align: justify;
+      font: {
+        size: $pSize;
+        weight: normal;
+      }
+  }
+}
+
+
+/* define mixin for carosel indicator */
+
+@mixin carosel-indicator($bottom-margin){
+ .carousel-indicators{
+    bottom: $bottom-margin !important;
+    li{
+      background-color: #676767;
+    }
+    li.active{
+      background-color: $color2;
+    }
+   }
+ }

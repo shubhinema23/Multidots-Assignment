@@ -1,0 +1,1786 @@
+@import "breakpoints";
+@import "basics";
+@import "owl-carousel";
+
+
+
+/*---------------------
+Table of contents
+
+1. header
+2. what we do 
+3. finished project
+4. our work
+5. vision mission
+6. our team
+7. get quote
+8. testimonial
+9. counter
+10. contact
+11. footer
+
+--------------------*/
+
+
+
+@media only screen and (min-width: $screen-sm-min){
+
+.container {
+  padding: 0 40px !important;
+}
+
+/* === 1.header === */
+
+#header {
+  background-image: url("../images/rectangle 1.png");
+  @include background-img-prop(cover);
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 35px;
+
+.website-logo{
+  width: 160px;
+}
+
+.navbar {
+  padding: 0 !important;
+
+ a {
+  color: $color3;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 2.57;
+  letter-spacing: 0.28px;
+  margin: 0 10px;
+}
+}
+  
+  .banner-text {
+    padding-top: 30px;
+  
+    span {
+      font:{
+        size: 12px;
+        weight: 600;
+        stretch: normal; 
+      }
+      line-height: 1.5;
+      letter-spacing: 3.76px;
+      color: $color2;
+    }
+
+    h2 {
+      font: {
+        size: 34px;
+        weight: 600;
+        stretch: normal;
+      }
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $color3;
+      margin: 15px 0;
+    }
+    p{
+      font: {
+        size: 13px;
+      }
+      line-height: 1.6;
+      letter-spacing: normal;
+      color: $color3;
+      margin: 20px 0;
+      padding: 0 70px 10px 70px;
+    }
+  }
+
+  .btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+}
+
+/* === 2.what we do === */
+
+#what-we-do{
+  background-image: url("../images/whaat-we-do.png");
+    @include background-img-prop(cover);
+
+    .what-grey{
+      background-color: #f2f2f2;
+    @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+    ul{
+      list-style: none;
+      padding: 0;
+
+    li{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      margin-bottom: 20px;
+      .icon{
+        padding-right: 30px;
+      }
+
+      img{
+        height: 25px;
+        width: 25px;
+      }
+
+      h2{
+        font-size: 18px;
+        color: $color1;
+        margin-bottom: 0;
+      }
+      span{
+        font-size: 14px;
+        color: $color4;
+      }
+    }
+  }
+}
+
+}
+
+
+/* === 3.finished project === */
+
+#finished-project{
+	padding: 30px 0;
+@include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+@include carosel-indicator(0px);
+
+}
+
+.finished-project-col{
+	text-align: center;
+  margin-bottom:20px;
+
+ img{
+	margin-bottom: 15px;
+ }
+ h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+ }
+ span{
+	font-size:13px;
+	color: #9b9b9b;
+ }
+ p{
+	font-size:14px;
+	color: #676767;
+	line-height: 20px;
+ }
+}
+
+
+/* === 4.our work === */
+
+#our-work {
+    padding-top: 30px;
+    padding-bottom: 212px;
+    background-image: url("../images/-e-Layer 10_2.png");
+    @include background-img-prop(cover);
+    margin-bottom: -212px;
+
+@include heading($color3, $color3, $color3, 14px, 30px, 14px)
+}
+
+
+/* === 5.vision mission === */
+
+#vision-mission {
+  .row{
+  box-shadow: 0px 0px 10px 0px #ccc;
+  }
+  .col-lg-6{
+    padding: 0;
+  }
+.vision{
+	background-image: url('dist/images/-e2.png');
+  @include background-img-prop(contain);
+    padding: 30px;
+    background-position-x: right;
+    background-color: #f2f2f2;
+    text-align: center;
+
+ h4{
+	color: $color1;
+  font-size:26px;
+  margin-bottom: 10px;
+ }
+ p{
+	color: $color4;
+  font-size:14px;
+}
+}
+
+.mission{
+    padding: 30px;
+    text-align: center;
+    background-color:$color3;
+ h4{
+	color: $color1;
+	font-size:26px;
+	margin-bottom: 10px;
+ }
+ p{
+	color: $color4;
+	font-size:14px;
+ }
+}
+}
+
+/* === 6.our team === */
+
+#our-team {
+  @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+  @include carosel-indicator(0px);
+
+  h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+  }
+  p{
+  	font-size: 14px;
+  }
+  span{
+  	font-size: 13px;
+  }
+
+}
+
+
+/* === 7.get quote === */
+
+#get-quote{
+	background-image: url('../images/-e-O6PHI30.png');
+	@include background-img-prop(cover);
+    padding: 50px 0;
+    text-align: center;
+    color: $color3;
+    
+   h2{
+    font-size: 40px;
+    }
+  span{
+    font-size:14px;
+    }
+
+  .btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+}
+
+
+/* === 8.testimonial === */
+
+#testimonial{
+   @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+   @include carosel-indicator(-40px);
+
+   img{
+    margin-bottom: 20px;
+   }
+   .carousel-indicators{
+    bottom: -40px !important;
+    li{
+      background-color: #676767;
+    }
+    li.active{
+      background-color: $color2;
+    }
+   }
+
+   p{
+    font-size:14px;
+   }
+
+   h6{
+    color: $color1;
+    font-weight: 600;
+    margin-bottom: 0;
+   }
+   span{
+    font-size:13px;
+   }
+}
+
+
+/* === 9.counter === */
+
+#counter{
+  background-image: url('../images/-e-Layer 10.png');
+  @include background-img-prop(cover);
+  text-align: center;
+
+.counter-box{
+  padding-bottom:50px;
+
+  img{
+    height: 45px;
+    margin-bottom: 20px;
+  }
+}
+.counter-box-last{
+  padding-bottom:0;
+}
+
+
+  h5{
+    color: $color2;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  p{
+    color: $color3;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+
+/* === 10.contact === */
+
+#contact{
+  background-color: #f2f2f2;
+  @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+  #contact-form{
+    .form-control{
+      font-size:14px !important;
+    }
+  }
+.btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+  .contact-detail{
+    margin-top: 40px;
+
+     h6{
+      color: $color1;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    p{
+      color: #676767;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .social-icon{
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    li {
+       float: left;
+       padding-right: 30px;
+
+       img{
+        height: 22px;
+       }
+      }
+    }
+  }
+}
+
+
+/* === 11.footer === */
+
+#footer{
+  background-image: url('../images/-e-Rectangle 14 copy.png');
+  @include background-img-prop(cover);
+  text-align: center;
+
+  .footer-logo{
+    color: $color3;
+    font-size: 30px;
+    margin-bottom: 30px;
+    .artist{
+      font-weight: 600;
+    }
+  }
+
+  .footer-menu{
+    margin-bottom: 30px;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    li {
+      float: left;
+      align-self: center;
+      padding: 0 10px;
+
+    a {
+      color: $color3;
+      font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    color: $color3;
+    font-size: 11px;
+  }
+
+}
+
+
+}
+
+
+
+
+@media only screen and (min-width: $screen-md-min){
+.container {
+  padding: 0 80px !important;
+}
+
+/* === 1.header === */
+
+#header {
+  background-image: url("../images/rectangle 1.png");
+  @include background-img-prop(cover);
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 35px;
+
+.website-logo{
+  width: 180px;
+}
+
+.navbar {
+  padding: 0 !important;
+
+ a {
+  color: $color3;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 2.57;
+  letter-spacing: 0.28px;
+  margin: 0 10px;
+}
+}
+  
+  .banner-text {
+    padding-top: 30px;
+  
+    span {
+      font:{
+        size: 12px;
+        weight: 600;
+        stretch: normal; 
+      }
+      line-height: 1.5;
+      letter-spacing: 3.76px;
+      color: $color2;
+    }
+
+    h2 {
+      font: {
+        size: 34px;
+        weight: 600;
+        stretch: normal;
+      }
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $color3;
+      margin: 15px 0;
+    }
+    p{
+      font: {
+        size: 13px;
+      }
+      line-height: 1.6;
+      letter-spacing: normal;
+      color: $color3;
+      margin: 20px 0;
+      padding: 0 70px 10px 70px;
+    }
+  }
+
+  .btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+}
+
+/* === 2.what we do === */
+
+#what-we-do{
+  background-image: url("../images/whaat-we-do.png");
+    @include background-img-prop(cover);
+
+    .what-grey{
+      background-color: #f2f2f2;
+    @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+    ul{
+      list-style: none;
+      padding: 0;
+
+    li{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      margin-bottom: 20px;
+      .icon{
+        padding-right: 30px;
+      }
+
+      img{
+        height: 25px;
+        width: 25px;
+      }
+
+      h2{
+        font-size: 18px;
+        color: $color1;
+        margin-bottom: 0;
+      }
+      span{
+        font-size: 14px;
+        color: $color4;
+      }
+    }
+  }
+}
+
+}
+
+
+/* === 3.finished project === */
+
+#finished-project{
+	padding: 30px 0;
+@include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+@include carosel-indicator(0px);
+
+}
+
+.finished-project-col{
+	text-align: center;
+  margin-bottom:20px;
+
+ img{
+	margin-bottom: 15px;
+ }
+ h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+ }
+ span{
+	font-size:13px;
+	color: #9b9b9b;
+ }
+ p{
+	font-size:14px;
+	color: #676767;
+	line-height: 20px;
+ }
+}
+
+
+/* === 4.our work === */
+
+#our-work {
+    padding-top: 30px;
+    padding-bottom: 212px;
+    background-image: url("../images/-e-Layer 10_2.png");
+    @include background-img-prop(cover);
+    margin-bottom: -212px;
+
+@include heading($color3, $color3, $color3, 14px, 30px, 14px)
+}
+
+
+/* === 5.vision mission === */
+
+#vision-mission {
+  .row{
+  box-shadow: 0px 0px 10px 0px #ccc;
+  }
+  .col-lg-6{
+    padding: 0;
+  }
+.vision{
+	background-image: url('dist/images/-e2.png');
+  @include background-img-prop(contain);
+    padding: 30px;
+    background-position-x: right;
+    background-color: #f2f2f2;
+    text-align: center;
+
+ h4{
+	color: $color1;
+  font-size:26px;
+  margin-bottom: 10px;
+ }
+ p{
+	color: $color4;
+  font-size:14px;
+}
+}
+
+.mission{
+    padding: 30px;
+    text-align: center;
+    background-color:$color3;
+ h4{
+	color: $color1;
+	font-size:26px;
+	margin-bottom: 10px;
+ }
+ p{
+	color: $color4;
+	font-size:14px;
+ }
+}
+}
+
+/* === 6.our team === */
+
+#our-team {
+  @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+  @include carosel-indicator(0px);
+
+  h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+  }
+  p{
+  	font-size: 14px;
+  }
+  span{
+  	font-size: 13px;
+  }
+
+}
+
+
+/* === 7.get quote === */
+
+#get-quote{
+	background-image: url('../images/-e-O6PHI30.png');
+	@include background-img-prop(cover);
+    padding: 50px 0;
+    text-align: center;
+    color: $color3;
+    
+   h2{
+    font-size: 40px;
+    }
+  span{
+    font-size:14px;
+    }
+
+  .btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+}
+
+
+/* === 8.testimonial === */
+
+#testimonial{
+   @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+   @include carosel-indicator(-40px);
+
+   img{
+    margin-bottom: 20px;
+   }
+   .carousel-indicators{
+    bottom: -40px !important;
+    li{
+      background-color: #676767;
+    }
+    li.active{
+      background-color: $color2;
+    }
+   }
+
+   p{
+    font-size:14px;
+   }
+
+   h6{
+    color: $color1;
+    font-weight: 600;
+    margin-bottom: 0;
+   }
+   span{
+    font-size:13px;
+   }
+}
+
+
+/* === 9.counter === */
+
+#counter{
+  background-image: url('../images/-e-Layer 10.png');
+  @include background-img-prop(cover);
+  text-align: center;
+
+.counter-box{
+  padding-bottom:50px;
+
+  img{
+    height: 45px;
+    margin-bottom: 20px;
+  }
+}
+.counter-box-last{
+  padding-bottom:0;
+}
+
+
+  h5{
+    color: $color2;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  p{
+    color: $color3;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+
+/* === 10.contact === */
+
+#contact{
+  background-color: #f2f2f2;
+  @include heading($color4, $color1, $color4, 14px, 30px, 14px);
+
+  #contact-form{
+    .form-control{
+      font-size:14px !important;
+    }
+  }
+.btn-small {
+  border: 1px solid #ff841b;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #ff841b;
+  text-decoration: none;
+  padding: 4px 5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+  .contact-detail{
+    margin-top: 40px;
+
+     h6{
+      color: $color1;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    p{
+      color: #676767;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .social-icon{
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    li {
+       float: left;
+       padding-right: 30px;
+
+       img{
+        height: 22px;
+       }
+      }
+    }
+  }
+}
+
+
+/* === 11.footer === */
+
+#footer{
+  background-image: url('../images/-e-Rectangle 14 copy.png');
+  @include background-img-prop(cover);
+  text-align: center;
+
+  .footer-logo{
+    color: $color3;
+    font-size: 30px;
+    margin-bottom: 30px;
+    .artist{
+      font-weight: 600;
+    }
+  }
+
+  .footer-menu{
+    margin-bottom: 30px;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    li {
+      float: left;
+      align-self: center;
+      padding: 0 10px;
+
+    a {
+      color: $color3;
+      font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    color: $color3;
+    font-size: 11px;
+  }
+
+}
+
+}
+
+
+
+@media only screen and (min-width: $screen-lg-min){
+.container {
+  padding: 0 80px !important;
+}
+
+/* === 1.header === */
+
+#header {
+  background-image: url("../images/rectangle 1.png");
+  @include background-img-prop(cover);
+  text-align: center;
+  color: $color3;
+  padding: 0 0 80px 0;
+
+.website-logo{
+  width: 200px;
+}
+
+.navbar-nav a {
+  color: $color3;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 2.57;
+  letter-spacing: 0.28px;
+  margin: 0 10px;
+}
+
+ 	.banner-text {
+ 	  padding-top: 130px;
+ 	  padding-bottom: 50px;
+		span {
+			font: {
+				size: 12px;
+				weight: 600;
+				stretch: normal;
+			}
+			line-height: 1.63;
+			letter-spacing: 5.76px;
+			color: $color2;
+		}
+		h2 {
+ 			font: {
+ 				size: 44px;
+ 				weight: 600;
+  				stretch: normal;
+ 			}
+  			line-height: 1.33;
+  			letter-spacing: normal;
+  			color: #ffffff;
+  			margin: 20px 0;
+		}
+ 		p {
+  			font:{
+  				size: 14px;
+  				weight: normal;
+  				stretch: normal;
+  			}
+  			line-height: 1.63;
+  			letter-spacing: normal;
+  			color: #ffffff;
+  			margin: 30px 70px 30px 70px;
+
+		}
+	}
+
+	.btn-large {
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		font-size: 14px;
+  		border-radius: 3px;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+ }
+
+
+/* === 2.what we do === */
+
+#what-we-do{
+	background-image: url("../images/whaat-we-do.png");
+  	@include background-img-prop(cover);
+
+  	.what-grey{
+  		background-color: #f2f2f2;
+  	@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+
+  	ul{
+  		list-style: none;
+  		padding: 0;
+
+  	li{
+  		display: flex;
+  		flex-direction: row;
+  		flex-wrap: nowrap;
+  		justify-content: flex-start;
+  		align-items: flex-start;
+  		align-content: flex-start;
+  		margin-bottom: 20px;
+  		.icon{
+  			padding-right: 30px;
+  		}
+
+  		img{
+  			height: 30px;
+  			width: 35px;
+  		}
+
+  		h2{
+  			font-size: 18px;
+  			color: $color1;
+  			margin-bottom: 0;
+  		}
+  		span{
+  			font-size: 14px;
+  			color: $color4;
+  		}
+  	}
+  }
+}
+
+}
+
+
+/* === 3.finished project === */
+
+#finished-project{
+
+@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+@include carosel-indicator(0px);
+}
+
+.finished-project-col{
+	text-align: center;
+
+ img{
+	margin-bottom: 15px;
+ }
+ h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+ }
+ span{
+	font-size:14px;
+	color: #9b9b9b;
+ }
+ p{
+	font-size:15px;
+	color: #676767;
+	line-height: 20px;
+	margin-top: 10px;
+ }
+}
+
+
+/* === 4.our work === */
+
+#our-work{
+    padding-bottom: 105px;
+    background-image: url("../images/-e-Layer 10_2.png");
+    @include background-img-prop(cover);
+    margin-bottom: -90px;
+
+@include heading($color3, $color3, $color3, 15px, 36px, 15px);
+}
+
+/* === 5.vision mission === */
+
+#vision-mission {
+	.row{
+	box-shadow: 0px 0px 10px 0px #ccc;
+	}
+	.col-lg-6{
+		padding: 0;
+	}
+
+.vision{
+	background-image: url('../images/-e2.png');
+  @include background-img-prop(contain);
+    padding: 30px;
+    background-position-x: right;
+    background-color: #f2f2f2;
+    text-align: center;
+
+ h4{
+	color: $color1;
+  font-size:22px;
+  margin: 10px 0;
+ }
+ p{
+	color: $color4;
+  font-size:15px;
+}
+}
+
+.mission{
+    padding: 30px;
+    text-align: center;
+    background-color: $color3;
+ h4{
+	color: $color1;
+	font-size:22px;
+	margin: 10px 0;
+ }
+ p{
+	color: $color4;
+	font-size:15px;
+ }
+}
+}
+
+
+/* === 6.our team === */
+
+#our-team {
+  @include heading($color4, $color1, $color4, 15px, 36px, 15px);
+  @include carosel-indicator(0px);
+  p{
+  	font-size: 15px;
+  }
+  span{
+  	font-size: 14px;
+  }
+
+  .d-small{
+  	display: none;
+  }
+  .d-large{
+  	display: block;
+  }
+}
+
+
+/* === 7.get quote === */
+
+#get-quote{
+	background-image: url('../images/-e-O6PHI30.png');
+	@include background-img-prop(cover);
+    padding: 50px;
+    text-align: left;
+    color: $color3;
+
+    h2{
+    	font-size: 40px;
+    }
+
+    .btn-large{
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+  		font-size: 14px;
+  		border-radius: 3px;
+
+	}
+}
+
+
+/* === 8.testimonial === */
+
+#testimonial{
+	 @include heading($color4, $color1, $color4, 15px, 36px, 15px);
+	 @include carosel-indicator(0px);
+
+	 .carousel-indicators{
+	 	li{
+	 		background-color: #676767;
+	 	}
+	 	li.active{
+	 		background-color: $color2;
+	 	}
+	 }
+
+	 p{
+	 	font-size:15px;
+	 }
+
+	 h6{
+	 	color: $color1;
+	 	font-weight: 600;
+	 }
+	 span{
+	 	font-size:13px;
+	 }
+}
+
+
+/* === 9.counter === */
+
+#counter{
+	background-image: url('../images/-e-Layer 10.png');
+	@include background-img-prop(cover);
+	text-align: center;
+
+
+	h5{
+		color: $color2;
+		font-size: 35px;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	p{
+		color: $color3;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+}
+
+/* === 10.contact === */
+
+#contact{
+	background-color: #f2f2f2;
+	@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+
+	.btn-large {
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+  		font-size: 14px;
+  		border-radius: 3px;
+	}
+
+	.contact-detail{
+		margin-top: 0;
+		 h6{
+			color: $color1;
+			font-weight: 600;
+			font-size: 18px;
+		}
+		p{
+			color: #676767;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.social-icon{
+		ul{
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+
+		li {
+ 			 float: left;
+ 			 padding-right: 20px;
+
+ 			 img{
+ 			 	height: 28px;
+ 			 }
+			}
+		}
+	}
+}
+
+/* === 11.footer === */
+
+#footer{
+	background-image: url('../images/-e-Rectangle 14 copy.png');
+	@include background-img-prop(cover);
+	text-align: center;
+
+ 	.footer-logo{
+ 		color: $color3;
+ 		font-size: 30px;
+ 		margin-bottom: 30px;
+ 		.artist{
+ 			font-weight: 600;
+ 		}
+ 	}
+
+ 	.footer-menu{
+ 		margin-bottom: 30px;
+
+ 		ul{
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+
+		li {
+ 			float: left;
+ 			
+
+ 		a {
+ 			color: $color3;
+ 			font-size: 14px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.copyright{
+ 		color: $color3;
+ 		font-size: 12px;
+ 	}
+
+}
+}
+
+
+
+@media only screen and (min-width: $screen-xl-min){
+.container {
+  padding: 0 150px !important;
+}
+
+
+/* === 1.header === */
+
+#header {
+  background-image: url("../images/rectangle 1.png");
+  @include background-img-prop(cover);
+  text-align: center;
+  color: $color3;
+  padding: 0 0 80px 0;
+
+.website-logo{
+  width: 200px;
+}
+
+.navbar-nav a {
+  color: $color3;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 2.57;
+  letter-spacing: 0.28px;
+  margin: 0 10px;
+}
+
+ 	.banner-text {
+ 	  padding-top: 130px;
+ 	  padding-bottom: 50px;
+		span {
+			font: {
+				size: 12px;
+				weight: 600;
+				stretch: normal;
+			}
+			line-height: 1.63;
+			letter-spacing: 5.76px;
+			color: $color2;
+		}
+		h2 {
+ 			font: {
+ 				size: 44px;
+ 				weight: 600;
+  				stretch: normal;
+ 			}
+  			line-height: 1.33;
+  			letter-spacing: normal;
+  			color: #ffffff;
+  			margin: 20px 0;
+		}
+ 		p {
+  			font:{
+  				size: 14px;
+  				weight: normal;
+  				stretch: normal;
+  			}
+  			line-height: 1.63;
+  			letter-spacing: normal;
+  			color: #ffffff;
+  			margin: 30px 100px 30px 100px;
+
+		}
+	}
+
+	.btn-large {
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		font-size: 14px;
+  		border-radius: 3px;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+ }
+
+
+/* === 2.what we do === */
+
+#what-we-do{
+	background-image: url("../images/whaat-we-do.png");
+  	@include background-img-prop(cover);
+
+  	.what-grey{
+  		background-color: #f2f2f2;
+  	@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+
+  	ul{
+  		list-style: none;
+  		padding: 0;
+
+  	li{
+  		display: flex;
+  		flex-direction: row;
+  		flex-wrap: nowrap;
+  		justify-content: flex-start;
+  		align-items: flex-start;
+  		align-content: flex-start;
+  		margin-bottom: 20px;
+  		.icon{
+  			padding-right: 30px;
+  		}
+
+  		img{
+  			height: 30px;
+  			width: 35px;
+  		}
+
+  		h2{
+  			font-size: 18px;
+  			color: $color1;
+  			margin-bottom: 0;
+  		}
+  		span{
+  			font-size: 14px;
+  			color: $color4;
+  		}
+  	}
+  }
+}
+
+}
+
+
+/* === 3.finished project === */
+
+#finished-project{
+
+@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+@include carosel-indicator(0px);
+}
+
+.finished-project-col{
+	text-align: center;
+
+ img{
+	margin-bottom: 15px;
+ }
+ h5{
+	font-size:17px;
+	color: #001a53;
+	font-weight: 600;
+ }
+ span{
+	font-size:14px;
+	color: #9b9b9b;
+ }
+ p{
+	font-size:15px;
+	color: #676767;
+	line-height: 20px;
+	margin-top: 10px;
+ }
+}
+
+
+/* === 4.our work === */
+
+#our-work{
+    padding-bottom: 105px;
+    background-image: url("../images/-e-Layer 10_2.png");
+    @include background-img-prop(cover);
+    margin-bottom: -90px;
+
+@include heading($color3, $color3, $color3, 15px, 36px, 15px);
+}
+
+
+/* === 5.vision mission === */
+
+#vision-mission {
+	.row{
+	box-shadow: 0px 0px 10px 0px #ccc;
+	}
+	.col-lg-6{
+		padding: 0;
+	}
+
+.vision{
+	background-image: url('../images/-e2.png');
+  @include background-img-prop(contain);
+    padding: 30px;
+    background-position-x: right;
+    background-color: #f2f2f2;
+    text-align: center;
+
+ h4{
+	color: $color1;
+  font-size:22px;
+  margin: 10px 0;
+ }
+ p{
+	color: $color4;
+  font-size:15px;
+}
+}
+
+.mission{
+    padding: 30px;
+    text-align: center;
+    background-color: $color3;
+ h4{
+	color: $color1;
+	font-size:22px;
+	margin: 10px 0;
+ }
+ p{
+	color: $color4;
+	font-size:15px;
+ }
+}
+}
+
+
+/* === 6.our team === */
+
+#our-team {
+  @include heading($color4, $color1, $color4, 15px, 36px, 15px);
+  @include carosel-indicator(0px);
+    p{
+  	font-size: 15px;
+  }
+  span{
+  	font-size: 14px;
+  }
+
+   .d-small{
+  	display: none;
+  }
+  .d-large{
+  	display: block;
+  }
+}
+
+
+/* === 7.get quote === */
+
+#get-quote{
+	background-image: url('../images/-e-O6PHI30.png');
+	@include background-img-prop(cover);
+    padding: 50px;
+    text-align: left;
+    color: $color3;
+
+    h2{
+    	font-size: 40px;
+    }
+
+    .btn-large{
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+  		font-size: 14px;
+  		border-radius: 3px;
+
+	}
+}
+
+
+/* === 8.testimonial === */
+
+#testimonial{
+	 @include heading($color4, $color1, $color4, 15px, 36px, 15px);
+	 @include carosel-indicator(0px);
+
+	 .carousel-indicators{
+	 	bottom: 0 !important;
+	 	li{
+	 		background-color: #676767;
+	 	}
+	 	li.active{
+	 		background-color: $color2;
+	 	}
+	 }
+
+	 p{
+	 	font-size:15px;
+	 }
+
+	 h6{
+	 	color: $color1;
+	 	font-weight: 600;
+	 }
+	 span{
+	 	font-size:13px;
+	 }
+}
+
+
+/* === 9.counter === */
+
+#counter{
+	background-image: url('../images/-e-Layer 10.png');
+	@include background-img-prop(cover);
+	text-align: center;
+
+	img{
+		height: 45px;
+	}
+
+	h5{
+		color: $color2;
+		font-size: 40px;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	p{
+		color: $color3;
+		font-size: 15px;
+		margin-top: 20px;
+	}
+}
+
+
+/* === 10.contact === */
+
+#contact{
+	background-color: #f2f2f2;
+	@include heading($color4, $color1, $color4, 15px, 36px, 15px);
+
+	.btn-large {
+  		border: 1px solid #ff841b;
+  		color: #ffffff;
+  		cursor: pointer;
+  		background-color: #ff841b;
+  		text-decoration: none;
+  		padding-top: 10px;
+    	padding-bottom: 10px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+  		font-size: 14px;
+  		border-radius: 3px;
+	}
+
+	.contact-detail{
+		margin-top: 0;
+		 h6{
+			color: $color1;
+			font-weight: 600;
+			font-size: 18px;
+		}
+		p{
+			color: #676767;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.social-icon{
+		ul{
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+
+		li {
+ 			 float: left;
+ 			 padding-right: 20px;
+
+ 			 img{
+ 			 	height: 30px;
+ 			 }
+			}
+		}
+	}
+}
+
+
+/* === 11.footer === */
+
+#footer{
+	background-image: url('../images/-e-Rectangle 14 copy.png');
+	@include background-img-prop(cover);
+	text-align: center;
+
+ 	.footer-logo{
+ 		color: $color3;
+ 		font-size: 30px;
+ 		margin-bottom: 30px;
+ 		.artist{
+ 			font-weight: 600;
+ 		}
+ 	}
+
+ 	.footer-menu{
+ 		margin-bottom: 30px;
+
+ 		ul{
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+
+		li {
+ 			float: left;
+ 			
+
+ 		a {
+ 			color: $color3;
+ 			font-size: 14px;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.copyright{
+ 		color: $color3;
+ 		font-size: 12px;
+ 	}
+
+	}
+}
+
+
+
